@@ -1,0 +1,16 @@
+# Copyright 2018 Oath, Inc.
+# Licensed under the terms of the MIT license. See LICENSE file in convertro-gdpr-dashboard-reference for terms.
+version: '3'
+
+services:
+  web:
+    build: ./
+    volumes:
+      - ./app:/app
+    env_file: .env
+    environment:
+      FLASK_APP: main.py
+      FLASK_DEBUG: 1
+    command: flask run --host=0.0.0.0 --port=80
+    ports:
+      - "5000:80"

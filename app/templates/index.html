@@ -1,0 +1,16 @@
+<!-- Copyright 2018 Oath, Inc. -->
+<!-- Licensed under the terms of the MIT license. See LICENSE file in convertro-gdpr-dashboard-reference for terms. -->
+{% extends "layout.html" %}
+{% block body %}
+<h2>Privacy Dashboard</h2>
+<h4>This is your company's privacy dashboard landing page.</h4>
+<p class="lead">When your users press the "Continue" button, they will be redirected to Convertro's
+  Cookie Reflection API to retrieve their cookies.</p>
+<p class="lead">
+  Then, they will be redirected back to your dashboard - to the route you pass as
+  <code>redirect_url</code> (if you're running this example locally, the button should link to
+  <a href="https://gdpr-cookies.sp1.convertro.com/reflect/your_company?redirect_url=http://localhost:5000/cookie-handler">
+    https://gdpr-cookies.sp1.convertro.com/reflect/your_company?redirect_url=http://localhost:5000/cookie-handler</a>).
+</p>
+<div><a class="btn btn-primary" href="{{ handler_url }}" role="button">Continue</a></div>
+{% endblock %}
