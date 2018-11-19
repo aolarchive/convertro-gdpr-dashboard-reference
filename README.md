@@ -1,3 +1,5 @@
+**Please Note**: This repo contains known security vulnerabilities and is no longer maintained. Use at your own risk!
+
 # convertro-gdpr-dashboard-reference
 
 This project is a reference implementation for a privacy dashboard that uses Convertro's GDPR APIs.
